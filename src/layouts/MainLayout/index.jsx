@@ -1,11 +1,10 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import NavMenu from "@/components/NavMenu/index2";
 import Head from "next/head";
-import Header from "../Header";
-import Footer from "../Footer";
-import NavMenu from "../NavMenu";
 
-export default function Layout(props) {
+const MainLayout = (props) => {
   let { pageTitle, children } = props;
-  console.log(pageTitle);
   if (pageTitle == "Agung Prasetyo | Junior Front End Web Developer") {
     pageTitle = "Agung Prasetyo | Junior Front End Web Developer";
   } else {
@@ -31,4 +30,6 @@ export default function Layout(props) {
       <Footer />
     </>
   );
-}
+};
+
+export default MainLayout;

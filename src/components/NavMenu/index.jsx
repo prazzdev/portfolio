@@ -1,32 +1,84 @@
-import Image from "next/image";
 import Link from "next/link";
 
-export default function NavMenu() {
-    return (
-        <>
-        <div class="absolute top-0 drawer">
-            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-            <div class="drawer-content">
-                <label for="my-drawer" id="" className="lg:hidden fixed bottom-14 right-5 p-2 rounded-md bg-teal-500">
-                    <Image src={'/images/icons/menu.svg'} height={28} width={28} />
-                </label>
-            </div> 
-            <div class="drawer-side">
-                <label for="my-drawer" class="drawer-overlay"></label>
-                <ul class="menu absolute bottom-12 p-4 w-50 h-fit text-base-content">
-                {/* <li><a>Sidebar Item 1</a></li>
-                <li><a>Sidebar Item 2</a></li> */}
-                <div id="headerMenu" className="flex flex-col w-[120px] z-99">
-                    <Link href="/" className="font-bold px-5 py-2 bg-white text-gray-800 rounded-md shadow-md mb-3 transition hover:bg-gray-100">Home</Link>
-                    <Link href="/about" className="font-bold px-4 py-2 bg-white text-black rounded-md shadow-md mb-3 transition hover:bg-gray-100">About</Link>
-                    <Link href="/skills" className="font-bold px-4 py-2 bg-white text-black rounded-md shadow-md mb-3 transition hover:bg-gray-100">Skills</Link>
-                    <Link href="/projects" className="font-bold px-4 py-2 bg-white text-black rounded-md shadow-md mb-3 transition hover:bg-gray-100">Projects</Link>
-                    <Link href="https://agungpraz.hashnode.dev" className="font-bold px-4 py-2 bg-white text-black rounded-md shadow-md mb-3 transition hover:bg-gray-100" target="_blank">Blog</Link>
-                </div>
-                
-                </ul>
-            </div>
-        </div>
-        </>
-    )
-}
+const NavMenu = () => {
+  return (
+    <>
+      <div className="lg:hidden btm-nav bg-white">
+        <Link href="/">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </button>
+        </Link>
+        <Link href="/about">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </button>
+        </Link>
+        <Link href="/skills">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              />
+            </svg>
+          </button>
+        </Link>
+        <Link href="/projects">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              />
+            </svg>
+          </button>
+        </Link>
+      </div>
+    </>
+  );
+};
+
+export default NavMenu;
