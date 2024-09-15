@@ -8,9 +8,9 @@ export default function NavMenu() {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
           <label
-            for="my-drawer"
+            htmlFor="my-drawer"
             id=""
-            className="lg:hidden fixed bottom-14 right-5 p-2 rounded-md bg-teal-500"
+            className="lg:hidden fixed bottom-[2em] right-[1.5em] p-2 rounded-md bg-teal-500"
           >
             <Image src={"/images/icons/menu.svg"} height={28} width={28} />
           </label>

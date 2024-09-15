@@ -19,7 +19,7 @@ const MainLayout = (props) => {
       <Header />
       <div
         id="container"
-        className="flex flex-column min-h-screen lg:w-[60%] mx-auto lg:py-[90px]"
+        className="relative flex flex-column min-h-[100svh] lg:w-[60%] mx-auto lg:py-[90px]"
         data-aos="fade-right"
         data-aos-easing="ease-in-out"
         data-aos-duration="600"
