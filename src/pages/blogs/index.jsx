@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const BlogsPage = () => {
   const { data, loading, error } = useQuery(GET_POSTS_QUERY);
-  const posts = data.publication.posts.edges;
+  const posts = data?.publication.posts.edges;
 
   return (
     <>
