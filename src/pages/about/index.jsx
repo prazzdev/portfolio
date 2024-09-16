@@ -4,7 +4,7 @@ import DefaultLayout from "@/layouts/DefaultLayout";
 export default function About() {
   return (
     <>
-      <DefaultLayout pageTitle="About Me | Agung Prasetyo">
+      <DefaultLayout pageTitle="About Me">
         <div className="lg:px-[3em] lg:py-[5em] pb-[2em]">
           <section
             id="about-me"
