@@ -6,7 +6,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "cdn.hashnode.com",
-        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "t3.ftcdn.net",
         pathname: "/**",
       },
     ],
