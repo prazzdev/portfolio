@@ -3,6 +3,7 @@ import { BsCodeSquare } from "react-icons/bs";
 import { GoProjectRoadmap } from "react-icons/go";
 import { BsInfoCircle } from "react-icons/bs";
 import { HiOutlineHome } from "react-icons/hi2";
+import { PiCompassTool } from "react-icons/pi";
 
 const NavMenu = () => {
   return (
@@ -24,6 +25,11 @@ const NavMenu = () => {
           </button>
         </Link>
         <Link href="/projects">
+          <button>
+            <PiCompassTool className="text-gray-700 w-6 h-6" />
+          </button>
+        </Link>
+        <Link href="/blogs">
           <button>
             <GoProjectRoadmap className="text-gray-700 w-6 h-6" />
           </button>

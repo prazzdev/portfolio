@@ -46,9 +46,8 @@ export default function NavMenu() {
                 Projects
               </Link>
               <Link
-                href="https://agungpraz.hashnode.dev"
+                href="/blogs"
                 className="font-bold px-4 py-2 bg-white text-black rounded-md shadow-md mb-3 transition hover:bg-gray-100"
-                target="_blank"
               >
                 Blog
               </Link>

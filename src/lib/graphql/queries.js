@@ -9,6 +9,9 @@ export const GET_POSTS_QUERY = gql`
             title
             brief
             url
+            ogMetaData {
+              image
+            }
           }
         }
         pageInfo {
